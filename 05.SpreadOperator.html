@@ -1,0 +1,71 @@
+<!-- fuction sum(name, ...args){
+
+}
+
+sum("Shri Ram",20,30,40);
+
+let arr=[20,30,40];
+
+sum("Shri Ram",...arr); -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <!-- <script>
+        function sum(name, ...args) {
+            console.log(arguments);
+            document.write(`Hello ${name} : `);
+
+            let sum = 0;
+            for(let i in args){
+                // console.log(i);
+                sum += args[i];
+            }
+            document.write(sum+"<br>");            
+        }
+        
+        var arr = [10,20,30];
+
+        sum("Piyush",...arr);
+    </script> -->
+    <!-- <script>
+        var arr = [10,20,30,40,50];
+        console.log(arr);
+        console.log([...arr]);
+    </script> -->
+    <!-- <script>
+        var arr1 = [10,20,30,40];
+        var arr2 = [...arr1];
+        arr1.push(50);
+
+        console.log(arr1);
+        console.log(arr2);
+    </script> -->
+    <!-- <script>
+        var arr1 = [10,20,30,40];
+        var arr2 = [50,60];
+        var arr3 = [5,...arr1, ...arr2, 70];
+
+        console.log(arr3);
+    </script> -->
+    <script>
+        var obj1 = {
+            name: "Mohan Sharma"
+        };
+        var obj2 = {
+            age : 25
+           
+        }
+
+
+        var obj3 = {...obj1, sex : "male",...obj2};
+
+        console.log(obj3);
+    </script>
+</body>
+</html>
