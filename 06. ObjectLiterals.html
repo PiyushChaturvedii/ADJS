@@ -25,14 +25,40 @@ let obj = {
          var obj = {
              [n + "name"]:"Mohan Sharma",
              course:"B.tech",
-             detail(){
+             'detail show'(){
                  return `${this.studentname} is student of ${this.course}`
              }
          };
     
          console.log(obj);
-         console.log(obj['detail']());
+         console.log(obj['detail show']());
 
     </script> -->
+    <!-- <script>
+        let name = "Piyush Chaturvedi";
+        let course = "MBA";
+
+        function student(name, course){
+            return{name, course};
+        }
+
+        console.log(student(name,course));
+
+    </script> -->
+    <script>
+        let fname = "Piyush";
+        let lname = "Chaturvedi";
+        let course = "MBA";
+
+        function student(fname, lname, course){
+            let fullname = fname + ' ' + lname;
+            return{fullname, course};
+        }
+
+        let s = student(fname, lname, course);
+
+        console.log(s.fullname);
+        console.log(s.course);
+    </script>
  </body>
  </html>
